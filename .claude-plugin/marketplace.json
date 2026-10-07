@@ -11,7 +11,10 @@
       "displayName": "Minlopro Skills",
       "description": "Reusable Claude skills for Minlopro's Salesforce delivery, sales, operations and internal work.",
       "version": "1.0.0",
-      "source": "."
+      "source": {
+        "source": "github",
+        "repo": "trenthilkertmlp/ai-skill-library"
+      }
     }
   ]
 }

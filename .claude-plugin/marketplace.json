@@ -1,0 +1,17 @@
+{
+  "name": "minlopro-skill-library",
+  "owner": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "description": "Minlopro's shared Claude skill library, organized by department and discipline.",
+  "plugins": [
+    {
+      "name": "minlopro-skills",
+      "displayName": "Minlopro Skills",
+      "description": "Reusable Claude skills for Minlopro's Salesforce delivery, sales, operations and internal work.",
+      "version": "1.0.0",
+      "source": "."
+    }
+  ]
+}

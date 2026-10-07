@@ -1,0 +1,15 @@
+{
+  "name": "minlopro-skills",
+  "displayName": "Minlopro Skills",
+  "version": "1.0.0",
+  "description": "Minlopro's shared Claude skill library, organized by department and discipline.",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "./delivery/data-management",
+    "./delivery/quality-assurance",
+    "./delivery/salesforce-development"
+  ]
+}

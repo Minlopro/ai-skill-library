@@ -4,16 +4,138 @@
     "name": "Minlopro Partners",
     "url": "https://minlopro.com"
   },
-  "description": "Minlopro's shared Claude skill library, organized by department and discipline.",
+  "description": "Minlopro's shared Claude skill library, organized by department and discipline. Each skill is published as its own plugin.",
   "plugins": [
     {
-      "name": "minlopro-skills",
-      "displayName": "Minlopro Skills",
-      "description": "Reusable Claude skills for Minlopro's Salesforce delivery, sales, operations and internal work.",
+      "name": "data-migration-runbook",
+      "displayName": "Data Migration Runbook",
+      "description": "Plan and execute a Salesforce data migration or transformation the safe, repeatable way: profile, map, transform, load, validate, reconcile.",
       "version": "1.0.0",
+      "category": "data-management",
       "source": {
-        "source": "github",
-        "repo": "trenthilkertmlp/ai-skill-library"
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/data-management/data-migration-runbook"
+      }
+    },
+    {
+      "name": "browser-qa",
+      "displayName": "Browser QA",
+      "description": "Drive a real Chrome browser (chrome-devtools MCP) to QA a web app's UI: reproduce bugs, exercise flows, read console/network, and cross-check the data layer.",
+      "version": "1.0.0",
+      "category": "quality-assurance",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/quality-assurance/browser-qa"
+      }
+    },
+    {
+      "name": "agentforce-agent-builder",
+      "displayName": "Agentforce Agent Builder",
+      "description": "Build, edit, debug, and ship a Salesforce Agentforce agent the source-first way (Agent Script .agent bundle + Apex invocables).",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/agentforce-agent-builder"
+      }
+    },
+    {
+      "name": "apex-coding-standard",
+      "displayName": "Apex Coding Standard",
+      "description": "Enforce and apply Salesforce Apex coding standards when reviewing or writing Apex (triggers, handlers, SOQL, DML, test classes).",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/apex-coding-standard"
+      }
+    },
+    {
+      "name": "apex-test-authoring",
+      "displayName": "Apex Test Authoring",
+      "description": "Write meaningful Salesforce Apex test classes with real assertions and realistic data, not coverage padding.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/apex-test-authoring"
+      }
+    },
+    {
+      "name": "deployment-workbook",
+      "displayName": "Deployment Workbook",
+      "description": "Enforce the sprint-by-sprint deployment workbook format and the commit convention that accompanies each deploy log.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/deployment-workbook"
+      }
+    },
+    {
+      "name": "design-doc-standard",
+      "displayName": "Design Doc Standard",
+      "description": "Enforce standards for structural project docs: design docs, dev/test plans, security matrices, ERDs, gap analyses, and orientation files.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/design-doc-standard"
+      }
+    },
+    {
+      "name": "flow-coding-standard",
+      "displayName": "Flow Coding Standard",
+      "description": "Enforce Salesforce Flow best practices: reliable, bulk-safe, maintainable Flows, and knowing when a Flow is the wrong tool.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/flow-coding-standard"
+      }
+    },
+    {
+      "name": "lwc-coding-standard",
+      "displayName": "LWC Coding Standard",
+      "description": "Enforce and apply Salesforce Lightning Web Components (LWC) coding standards when reviewing or writing LWC.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/lwc-coding-standard"
+      }
+    },
+    {
+      "name": "product-library-sanitize",
+      "displayName": "Product Library Sanitize",
+      "description": "Strip client details out of Salesforce metadata and package it as a reusable, generic Minlopro product-library asset.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/product-library-sanitize"
+      }
+    },
+    {
+      "name": "product-library-search",
+      "displayName": "Product Library Search",
+      "description": "Find reusable, client-free Salesforce assets in the Minlopro product library before building anything new.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/product-library-search"
       }
     }
   ]

@@ -67,6 +67,18 @@
       }
     },
     {
+      "name": "coe-mlp-project-bootstrap",
+      "displayName": "MLP Project Bootstrap (CoE)",
+      "description": "Bootstrap a new Minlopro client project from a Proto link: repo from the firm template, README/CLAUDE.md filled from Proto, branches, org auth, and optional prod/dev metadata baselines.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/coe-mlp-project-bootstrap"
+      }
+    },
+    {
       "name": "deployment-workbook",
       "displayName": "Deployment Workbook",
       "description": "Enforce the sprint-by-sprint deployment workbook format and the commit convention that accompanies each deploy log.",

@@ -38,6 +38,7 @@ separate marketplace item.
 | `agentforce-agent-builder` | salesforce-development | Build, edit, debug, and ship a Salesforce Agentforce agent the source-first way (Agent Script + Apex). |
 | `apex-coding-standard` | salesforce-development | Enforce and apply Salesforce Apex coding standards when reviewing or writing Apex. |
 | `apex-test-authoring` | salesforce-development | Write meaningful Apex test classes with real assertions and realistic data. |
+| `coe-mlp-project-bootstrap` | salesforce-development | Bootstrap a new client project from a Proto link: repo from the firm template, docs filled from Proto, branches, org auth, optional prod/dev baselines. |
 | `deployment-workbook` | salesforce-development | Enforce the sprint-by-sprint deployment workbook format and its commit convention. |
 | `design-doc-standard` | salesforce-development | Enforce standards for design docs, dev/test plans, security matrices, ERDs, and orientation files. |
 | `flow-coding-standard` | salesforce-development | Enforce Salesforce Flow best practices and know when a Flow is the wrong tool. |

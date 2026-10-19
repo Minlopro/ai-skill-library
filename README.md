@@ -36,6 +36,7 @@ separate marketplace item.
 | `data-migration-runbook` | data-management | Plan and execute a Salesforce data migration/transformation safely: profile, map, transform, load, validate, reconcile. |
 | `browser-qa` | quality-assurance | Drive a real Chrome browser (chrome-devtools MCP) to QA a web app's UI, reproduce bugs, and cross-check the data layer. |
 | `agentforce-agent-builder` | salesforce-development | Build, edit, debug, and ship a Salesforce Agentforce agent the source-first way (Agent Script + Apex). |
+| `minlopro-salesforce-project-setup` | salesforce-development | Stand up a complete agentic Salesforce delivery project from scratch: toolchain, org/GitHub auth, SFDX scaffold with CLAUDE.md memory and a prod-deploy guardrail hook, then the per-epic delivery loop. |
 | `apex-coding-standard` | salesforce-development | Enforce and apply Salesforce Apex coding standards when reviewing or writing Apex. |
 | `apex-test-authoring` | salesforce-development | Write meaningful Apex test classes with real assertions and realistic data. |
 | `deployment-workbook` | salesforce-development | Enforce the sprint-by-sprint deployment workbook format and its commit convention. |

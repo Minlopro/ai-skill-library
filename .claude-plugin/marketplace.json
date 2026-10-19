@@ -43,6 +43,18 @@
       }
     },
     {
+      "name": "minlopro-salesforce-project-setup",
+      "displayName": "Salesforce Project Setup",
+      "description": "Stand up a complete agentic Salesforce delivery project from scratch: install the toolchain, authenticate the orgs and GitHub, scaffold an SFDX repo with the standard CLAUDE.md memory and a production-deploy guardrail hook, then hand off to the per-epic delivery loop.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/minlopro-salesforce-project-setup"
+      }
+    },
+    {
       "name": "apex-coding-standard",
       "displayName": "Apex Coding Standard",
       "description": "Enforce and apply Salesforce Apex coding standards when reviewing or writing Apex (triggers, handlers, SOQL, DML, test classes).",

@@ -137,6 +137,18 @@
         "url": "https://github.com/Minlopro/ai-skill-library.git",
         "path": "delivery/salesforce-development/product-library-search"
       }
+    },
+    {
+      "name": "proto-academy-authoring",
+      "displayName": "Proto Academy Authoring",
+      "description": "Author Proto Academy (internal LMS) content directly in the live Salesforce org through the Create/Edit/Read MCP connection, as a content creator: permission-gated, no-delete record writes, draft-and-confirm.",
+      "version": "1.0.0",
+      "category": "internal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "internal/proto-academy-authoring"
+      }
     }
   ]
 }

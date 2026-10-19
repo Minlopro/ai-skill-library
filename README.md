@@ -44,6 +44,7 @@ separate marketplace item.
 | `lwc-coding-standard` | salesforce-development | Enforce and apply Salesforce LWC coding standards when reviewing or writing components. |
 | `product-library-sanitize` | salesforce-development | Strip client details from Salesforce metadata and package it as a reusable product-library asset. |
 | `product-library-search` | salesforce-development | Find reusable, client-free Salesforce assets in the product library before building anything new. |
+| `proto-academy-authoring` | internal | Author Proto Academy (internal LMS) content directly in the live org via the Create/Edit/Read MCP connection, as a content creator: permission-gated, no-delete record writes, draft-and-confirm. |
 
 ## How it's organized
 

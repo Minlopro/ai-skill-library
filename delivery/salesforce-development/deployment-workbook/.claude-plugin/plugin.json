@@ -1,0 +1,13 @@
+{
+  "name": "deployment-workbook",
+  "displayName": "Deployment Workbook",
+  "description": "Enforce the sprint-by-sprint deployment workbook format and the commit convention that accompanies each deploy log.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

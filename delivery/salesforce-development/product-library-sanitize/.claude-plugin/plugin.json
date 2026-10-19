@@ -1,0 +1,13 @@
+{
+  "name": "product-library-sanitize",
+  "displayName": "Product Library Sanitize",
+  "description": "Strip client details out of Salesforce metadata and package it as a reusable, generic Minlopro product-library asset.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "browser-qa",
+  "displayName": "Browser QA",
+  "description": "Drive a real Chrome browser (chrome-devtools MCP) to QA a web app's UI: reproduce bugs, exercise flows, read console/network, and cross-check the data layer.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

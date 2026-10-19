@@ -1,0 +1,13 @@
+{
+  "name": "apex-test-authoring",
+  "displayName": "Apex Test Authoring",
+  "description": "Write meaningful Salesforce Apex test classes with real assertions and realistic data, not coverage padding.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

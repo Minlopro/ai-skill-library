@@ -1,0 +1,13 @@
+{
+  "name": "design-doc-standard",
+  "displayName": "Design Doc Standard",
+  "description": "Enforce standards for structural project docs: design docs, dev/test plans, security matrices, ERDs, gap analyses, and orientation files.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

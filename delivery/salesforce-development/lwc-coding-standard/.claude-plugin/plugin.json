@@ -1,0 +1,13 @@
+{
+  "name": "lwc-coding-standard",
+  "displayName": "LWC Coding Standard",
+  "description": "Enforce and apply Salesforce Lightning Web Components (LWC) coding standards when reviewing or writing LWC.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

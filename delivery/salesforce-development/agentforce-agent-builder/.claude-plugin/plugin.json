@@ -1,0 +1,13 @@
+{
+  "name": "agentforce-agent-builder",
+  "displayName": "Agentforce Agent Builder",
+  "description": "Build, edit, debug, and ship a Salesforce Agentforce agent the source-first way (Agent Script .agent bundle + Apex invocables).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

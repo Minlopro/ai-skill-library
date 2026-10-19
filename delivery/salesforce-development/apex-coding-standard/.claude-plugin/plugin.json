@@ -1,0 +1,13 @@
+{
+  "name": "apex-coding-standard",
+  "displayName": "Apex Coding Standard",
+  "description": "Enforce and apply Salesforce Apex coding standards when reviewing or writing Apex (triggers, handlers, SOQL, DML, test classes).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

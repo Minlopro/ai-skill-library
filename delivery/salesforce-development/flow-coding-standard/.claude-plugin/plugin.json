@@ -1,0 +1,13 @@
+{
+  "name": "flow-coding-standard",
+  "displayName": "Flow Coding Standard",
+  "description": "Enforce Salesforce Flow best practices: reliable, bulk-safe, maintainable Flows, and knowing when a Flow is the wrong tool.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

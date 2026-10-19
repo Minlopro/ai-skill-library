@@ -1,0 +1,13 @@
+{
+  "name": "product-library-search",
+  "displayName": "Product Library Search",
+  "description": "Find reusable, client-free Salesforce assets in the Minlopro product library before building anything new.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

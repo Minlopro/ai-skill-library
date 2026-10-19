@@ -12,13 +12,17 @@ org may add or remove fields.
 - `Icon__c` (text) - SLDS utility icon, e.g. `utility:shield`.
 - `Accent_Color__c` (text) - hex, e.g. `#5a3fa0`.
 - `Requires_Quiz__c` (checkbox).
+- `Requires_Manager_Approval__c` (checkbox) - when true, completion is gated on a
+  manager approving the learner's uploaded evidence. Pair it with an Evidence step.
 - `Passing_Score__c` (number, percent).
 - `Estimated_Minutes__c` (number).
 - `Version__c` (number).
 
 ## Training_Step__c (an ordered step)
 - `Training__c` (lookup), `Sort_Order__c` (number; use 10, 20, 30, ... for gaps).
-- `Kind__c` (picklist): `Intro` | `Content` | `Tool` | `Outro`.
+- `Kind__c` (picklist): `Intro` | `Content` | `Tool` | `Outro` | `Evidence`
+  (`Evidence` = the learner uploads a file to submit for manager approval; make it
+  the last step; put the upload instructions in `Body__c`).
 - `Title__c` (text), `Body__c` (rich text HTML; see body rules in SKILL.md).
 - `Icon__c`, `Accent_Color__c`.
 - `Video_Url__c` (url) - youtube-nocookie / vimeo embed supported.
@@ -49,7 +53,9 @@ org may add or remove fields.
 
 ## Training_Assignment__c (a person's assignment)
 - `Contact__c`, `Training__c`, `Learning_Path__c`, `Status__c` (`Not Started` |
-  `In Progress` | `Completed`), `Required__c`, `Due_Date__c`, `Completed_Date__c`,
+  `In Progress` | `Submitted for Approval` | `Completed`; `Submitted for Approval`
+  is set by the evidence engine while awaiting manager review), `Required__c`,
+  `Due_Date__c`, `Completed_Date__c`,
   `Progress__c`, `Assigned_By__c`, `Assigned_Date__c`, `Last_Step_Reached__c`.
 
 ## Academy_Certification__c (credential definition)
@@ -62,6 +68,15 @@ org may add or remove fields.
 - `Name` (auto-number credential id), `Contact__c`, `Certification__c`,
   `Issued_Date__c`, `Expiration_Date__c`, `Status__c`, `Final_Score__c`,
   `Source_Assignment__c`.
+
+## Training_Evidence__c (engine-managed - do not write by hand)
+- Created when a learner uploads evidence on an Evidence step, and updated by the
+  reviewer. Authors never create, edit, or delete these.
+- `Training_Assignment__c`, `Training__c`, `Training_Step__c`, `Contact__c`,
+  `Status__c` (`Pending` | `Approved` | `Rejected`), `Content_Document_Id__c`,
+  `Submitted_Date__c`, `Reviewed_Date__c`, `Reviewer__c`, `Review_Notes__c`.
+- To author an evidence training you only set `Training__c.Requires_Manager_Approval__c`
+  and add an `Evidence`-kind step; the rest is handled by the engine.
 
 ## Employee linkage (important)
 - Employees are `Contact` records linked to a `User`. Academy participation keys on

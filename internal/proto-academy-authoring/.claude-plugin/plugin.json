@@ -1,8 +1,8 @@
 {
   "name": "proto-academy-authoring",
   "displayName": "Proto Academy Authoring",
-  "description": "Author Proto Academy (internal LMS) content directly in the live Salesforce org through the Create/Edit/Read MCP connection, as a content creator: permission-gated, no-delete record writes, draft-and-confirm.",
-  "version": "1.0.0",
+  "description": "Author Proto Academy (internal LMS) content directly in the live Salesforce org through the Create/Edit/Read MCP connection, as a content creator: permission-gated, no-delete record writes, evidence + manager-approval trainings, draft-and-confirm.",
+  "version": "1.1.0",
   "author": {
     "name": "Minlopro Partners",
     "url": "https://minlopro.com"

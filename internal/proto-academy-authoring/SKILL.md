@@ -4,10 +4,11 @@ description: >-
   Author Proto Academy content directly in the live Proto Salesforce org through
   the Salesforce Create/Edit/Read MCP connection, as a content creator (not a
   developer). Use when an Academy manager or content creator wants to create or
-  update a training (course), step, quiz, learning path, or certification by
-  writing records, without Apex seed scripts or metadata deploys. Covers the
-  permission gate, the no-delete record-write order, the body-HTML and quiz
-  rules, draft-and-confirm, and the data-only boundary.
+  update a training (course), step, quiz, evidence step with manager approval,
+  learning path, or certification by writing records, without Apex seed scripts
+  or metadata deploys. Covers the permission gate, the no-delete record-write
+  order, the body-HTML and quiz rules, evidence + approval trainings,
+  draft-and-confirm, and the data-only boundary.
 ---
 
 # Proto Academy content authoring (production, via MCP)
@@ -122,8 +123,10 @@ the created Ids to wire up the lookups.
 ### Step kinds and styling
 
 - `Kind__c` is `Intro` (welcome), `Content` (the teaching), `Tool` (a Delivery
-  Excellence tool deep dive, can use the tool-step fields), or `Outro` (wrap and
-  next steps). A typical course is Intro, several Content steps, Outro.
+  Excellence tool deep dive, can use the tool-step fields), `Outro` (wrap and
+  next steps), or `Evidence` (the learner uploads a file to submit for manager
+  approval; see "Evidence steps and manager approval"). A typical course is
+  Intro, several Content steps, Outro.
 - `Icon__c` is an SLDS utility name (`utility:info`, `utility:shield`,
   `utility:success`, ...). `Accent_Color__c` is a hex string like `#5a3fa0`.
 
@@ -140,6 +143,46 @@ the created Ids to wire up the lookups.
   per-item availability follows each training's `Status__c` and the learner's
   assignment. Keep a path non-Active until it is ready, or gate rollout with an
   `Academy_Rule__c`.
+
+## Evidence steps and manager approval
+
+Some trainings require the learner to upload proof of a hands-on exercise (for
+example a scorecard screenshot) and have a manager approve it before they are
+marked complete. The evidence engine handles the upload, the review queue, the
+approval, and the bell notifications. You author it as data:
+
+1. On the `Training__c`, set `Requires_Manager_Approval__c = true`.
+2. Add a `Training_Step__c` with `Kind__c = 'Evidence'` as the **last step**. Put
+   the upload instructions in `Body__c` (same body-HTML rules as any step), for
+   example "Upload a screenshot of your completed scorecard." Give it a clear
+   `Title__c`.
+3. Leave the quiz off for an approval training (`Requires_Quiz__c = false`): the
+   Evidence step is the terminal gate, so a quiz on the same training is skipped.
+
+What the engine then does (not you):
+- The learner uploads a file on the Evidence step and submits. The assignment
+  moves to **Submitted for Approval** (not Completed), and the learner's manager
+  gets a bell notification.
+- A reviewer (the learner's direct manager, or any Proto Academy manager) sees it
+  in the **Evidence Review** queue on the Manage Training page and approves or
+  rejects. **Approve** completes the assignment and issues any mapped
+  certification, and the learner gets a bell. **Reject** sends it back with a
+  required note; the learner gets a bell with the reason and a banner on the
+  Evidence step to redo and resubmit.
+
+Rules and limits:
+- Keep the Evidence step **last**; the engine treats it as the terminal action.
+- Point a `Academy_Certification__c` at the training (as usual) if you want
+  approval to award a credential. It issues on completion, which here means on
+  approval.
+- `Training_Evidence__c` rows are **engine-managed**: the learner's upload creates
+  them and the reviewer updates them. Never create, edit, or delete evidence
+  records by hand (the no-delete rule applies, and hand-editing breaks the flow).
+- Review routing uses `Contact.Contact_User_Record__c` then `User.ManagerId`.
+  Where a learner has no manager on file, review falls back to Academy managers.
+- If `Requires_Manager_Approval__c` or the `Evidence` step kind is missing in your
+  org, the evidence engine has not been deployed there. That is a developer task
+  (see `proto-academy-content`), not something you can configure as data.
 
 ## What this path cannot do (hand off to a developer)
 

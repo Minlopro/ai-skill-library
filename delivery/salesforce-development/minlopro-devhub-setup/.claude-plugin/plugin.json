@@ -1,0 +1,13 @@
+{
+  "name": "minlopro-devhub-setup",
+  "displayName": "Minlopro Dev Hub Setup",
+  "description": "Connect the Salesforce CLI to Minlopro production as a Dev Hub only, check scratch-org access and the firm's shared limits, and create scratch orgs with the guardrails that come with logging in to production.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Minlopro Partners",
+    "url": "https://minlopro.com"
+  },
+  "skills": [
+    "."
+  ]
+}

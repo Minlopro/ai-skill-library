@@ -1,0 +1,10 @@
+{
+  "orgName": "Minlopro scratch org",
+  "edition": "Developer",
+  "hasSampleData": false,
+  "features": ["EnableSetPasswordInApi"],
+  "settings": {
+    "lightningExperienceSettings": { "enableS1DesktopEnabled": true },
+    "accountSettings": { "enableRelateContactToMultipleAccounts": true }
+  }
+}

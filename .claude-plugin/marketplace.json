@@ -55,6 +55,18 @@
       }
     },
     {
+      "name": "minlopro-devhub-setup",
+      "displayName": "Minlopro Dev Hub Setup",
+      "description": "Connect the Salesforce CLI to Minlopro production as a Dev Hub only, check scratch-org access and the firm's shared limits, and create scratch orgs with production guardrails.",
+      "version": "1.0.0",
+      "category": "salesforce-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Minlopro/ai-skill-library.git",
+        "path": "delivery/salesforce-development/minlopro-devhub-setup"
+      }
+    },
+    {
       "name": "apex-coding-standard",
       "displayName": "Apex Coding Standard",
       "description": "Enforce and apply Salesforce Apex coding standards when reviewing or writing Apex (triggers, handlers, SOQL, DML, test classes).",
